@@ -4,6 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/images'));
 
 var buffer = new Buffer(fs.readFileSync("index.html"));
 var out = buffer.toString();
