@@ -2,8 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mardy AFC | Home</title>
-		<link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 
 		<style type="text/css">
@@ -71,65 +72,55 @@
       	</style>
 	</head>
 	<body>
-		
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- <a class="brand" href="#">Mardy AFC</a> -->
-					<div class="nav-collapse collapse pull-right">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#history">History</a></li>
-							<li><a href="#teams">Teams</a></li>
-							<li><a href="#events">Events</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="row-fluid">
-				<div class="span2 pull-left">
-					<img src="./images/badge_draft3_h200.png">
-				</div>
-				<div class="span10">
-					<div class="row-fluid">
-						<div class="span6">
-							<h1>Mardy AFC</h1>
-							<p class="lead">Welcome to the Mardy AFC website.</p>
-						</div>
-						<div class="span6">
-							<img src="./images/mardyjan1983.jpg" height="200" width="350" style="float: right;">
-						</div>
-					</div>
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="nav-collapse collapse pull-right navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#history">History</a></li>
+						<li><a href="#teams">Teams</a></li>
+						<li><a href="#events">Events</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="row-fluid">
-				<div class="span2 pull-left">
+			<div class="row">
+				<div class="col-lg-2 pull-left">
+					<img src="./images/badge_draft3_h200.png">
+				</div>
+				<div class="col-lg-5 col-offset-1">
+					<h1>Mardy AFC</h1>
+					<p class="lead">Welcome to the Mardy AFC website.</p>
+				</div>
+				<div class="col-lg-4 pull-right">
+					<img src="./images/mardyjan1983.jpg" height="200" width="350">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 pull left">
 					<a class="twitter-timeline" height="500" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 					</script>
 				</div>
-			
-				<div class="span10">
-					<div class="row-fluid">
-						<div class="span6">
-							<p>
-								With pre-season well underway, having played two games losing 3-2 and winning 6-0, this Saturday is a chance for the managers to cast an eye over their players as a mixed team match takes place on the Mardy Park, kick off 2pm.
-							</p>
+				<div class="col-lg-10">
+					<div class="row">
+						<div class="col-lg-6">
+							<p>Site is currently undergoing maintenance, please check back soon.
 						</div>
-						<div class="span6">
+						<div class="col-lg-6">
 							<h2 class="text-right">Sponsors</h2>
 							<p class="text-right">Big thanks to the following for their support</p>
 							<img src="./images/belmont_350x100.png" class="sponsor-right" style="float: right">
@@ -144,8 +135,8 @@
 		
 		<footer class="footer">
 			<div class="container">
-				<div class="row-fluid">
-					<div class="span12">
+				<div class="row">
+					<div class="col-lg-12">
 						<p>Website designed and built by <a href="http://twitter.com/adamwhite1">@adamwhite1</a> &copy; 2013</p>
 						<p>Hosted by <a href="http://swift4.com">Swift4</a></p>
 					</div>
