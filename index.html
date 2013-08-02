@@ -7,12 +7,14 @@
 		<link type="text/css" rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 		<link rel='stylesheet' id='camera-css'  href='./Camera/css/camera.css' type='text/css' media='all'>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="./Camera/scripts/jquery.min.js"></script>
 		<script type='text/javascript' src='./Camera/scripts/jquery.mobile.customized.min.js'></script>
     	<script type='text/javascript' src='./Camera/scripts/jquery.easing.1.3.js'></script>    	
     	<script type='text/javascript' src='./Camera/scripts/camera.min.js'></script>
+    	<script type="text/javascript" src="./jquery/content.js"></script>
 
     	<script>
     		jQuery(function(){
@@ -107,12 +109,12 @@
 
 				<div class="nav-collapse navbar-responsive-collapse collapse" style="height: auto;">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#history">History</a></li>
-						<li><a href="#teams">Teams</a></li>
-						<li><a href="#events">Events</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li id="home"class="active"><a href="#home">Home</a></li>
+						<li id="about"><a href="#about">About</a></li>
+						<li id="history"><a href="#history">History</a></li>
+						<li id="teams"><a href="#teams">Teams</a></li>
+						<li id="events"><a href="#events">Events</a></li>
+						<li id="contact"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -147,8 +149,50 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<p>Site is currently undergoing maintenance, please check back soon.</p>
+					<div class="content">
+						<div class="page" id="home" style="display: block;">
+							<p>Site is currently undergoing maintenance, please check back soon.</p>
+						</div>
+
+						<div class="page" id="about" style="display: none;">
+							<p>About page will be here....</p>
+						</div>
+
+						<div class="page" id="history" style="display: none;">
+							<p>History page will be here....</p>
+						</div>
+
+						<div class="page" id="teams" style="display: none;">
+							<p>Team page will be here....</p>
+						</div>
+
+						<div class="page" id="events" style="display: none;">
+							<p>Events page will be here....</p>
+						</div>
+
+						<div class="page" id="contact" style="display: none;">
+							<h1>Contact</h1>
+							<div class"pitch-loc">
+								<h2>Find the pitch</h2>
+								<address>
+									<strong>Mardy Park</strong><br>
+									St David's Road<br>
+									Mardy<br>
+									Abergavenny<br>
+									NP7 6HF<br>
+								</address>
+							</div>
+
+							<div class="map-tog">Show/Hide map</div>
+
+							<div class="pitch-map">
+								<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="./pages/map.html"></iframe>
+							</div>
+							
+						</div>
+					</div>
 				</div>
+
 				<div class="col-lg-4" style="border-left: 1px solid #cccccc;">
 					<div class="pull-right">
 						<a class="twitter-timeline" height="250" width="350" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
