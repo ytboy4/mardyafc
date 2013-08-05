@@ -6,6 +6,7 @@
 		<title>Mardy AFC | Home</title>
 		<link type="text/css" rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap-social-buttons/social-buttons.css">
 		<link rel='stylesheet' id='camera-css'  href='./Camera/css/camera.css' type='text/css' media='all'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -72,16 +73,41 @@
         		font-size: 18px;
         		line-height: 24px;
       		}
+      		tbody {
+      			width: 300px;
+      		}
       		.spacer {
       			height: 10px;
       			margin: 10px 0;
       			border-bottom: 1px solid #cccccc;
       		}
-      		.sponsor-right{
+      		.sponsor-right {
       			margin: 0 0 6px 0;
       		}
-      		.sponsor-right, .image{
+      		.sponsor-right, .image {
       			margin-right: 10px;
+      		}
+      		.stat-table {
+      			width: 300px;
+      			line-height: 16px;
+      		}
+      		.team-home, .team-away, .score{
+      			display: block;
+      			float: left;
+      			padding: 0 8px;
+      		}
+      		.team-home, .team-away{
+      			width: 40%;
+      		}
+      		.team-home {
+      			text-align: right;
+      		}
+      		.team-away {
+      			text-align: left;
+      		}
+      		.score {
+      			text-align: center;
+      			width: 20%;
       		}
       		.footer {
       			background-color:#777777;
@@ -124,10 +150,70 @@
 			<div class="row">
 				<div class="col-lg-2 pull-left">
 					<img src="./images/badge_draft3_h200.png">
+					<div class="row">
+						<div class="col-lg-10 text-center">
+							<button class="btn btn-mini btn-twitter"><i class="icon-twitter"></i></button>
+							<button class="btn btn-mini btn-facebook"><i class="icon-facebook"></i></button>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-5 col-offset-1">
+				<div class="col-lg-6">
 					<h1>Mardy AFC</h1>
 					<p class="lead">Welcome to the Mardy AFC website.</p>
+					<div class="row">
+						<div class="col-lg-6 pull left">
+							<h4 class="table-header text-center">Results</h4>
+							<table class="stat-table">
+								<tr>
+									<th colspan="4" class="text-center">Friendly Sat 3rd Aug 2013</th>
+								</tr>
+								<tbody>
+								<tr>
+									<td class="match-details">
+										<span class="team-home">Mardy AFC 1st</span>
+										<span class="score">3-6</span>
+										<span class="team-away">Pencoed</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="team-home">Rockfield</span>
+										<span class="score">0-4</span>
+										<spanclass="team-away">Mardy AFC 2nd</span>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<div class="col-lg-6 pull right">
+							<!--<p class="text-right"><strong>Next Fixture:</strong><br>
+											Friendly Tues 6th August 2013<br></p>
+							<p class="text-right"><small>1st - K.O. 6pm - Tredegar Town</small><br></p>-->
+							<h4 class="table-header text-center">Fixtures</h4>
+							<table class="stat-table">
+								<tr>
+									<th colspan="4" class="text-center">Friendly Tues 6th Aug 2013</th>
+								</tr>
+								<tbody>
+								<tr>
+									<td class="match-details">
+										<span class="team-home">Mardy AFC 1st</span>
+										<span class="score">6:30</span>
+										<span class="team-away">Tredegar</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="team-home">TBC</span>
+										<span class="score">v</span>
+										<spanclass="team-away">Mardy AFC 2nd</span>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 				<div class="col-lg-4 pull-right">
 					<div class="camera_wrap" id="camera_wrap_1" style="width: 370px;">
@@ -155,18 +241,22 @@
 						</div>
 
 						<div class="page" id="about" style="display: none;">
+							<h1>About</h1>
 							<p>About page will be here....</p>
 						</div>
 
 						<div class="page" id="history" style="display: none;">
+							<h1>History</h1>
 							<p>History page will be here....</p>
 						</div>
 
 						<div class="page" id="teams" style="display: none;">
-							<p>Team page will be here....</p>
+							<h1>Teams</h1>
+							<p>Team pages will be here....</p>
 						</div>
 
 						<div class="page" id="events" style="display: none;">
+							<h1>Events</h1>
 							<p>Events page will be here....</p>
 						</div>
 
