@@ -1,11 +1,15 @@
 var express = require('express');
-var fs = reuqire('fs');
+var fs = require('fs');
 
-var app = express.createServer(express.logger());
+var app = express();
+
+
 
 var buffer = new Buffer(fs.readFileSync("index.html"));
 var out = buffer.toString();
 
+app.use(express.static(__dirname + '/'));
+//app.use(express.static(__dirname + '/images'));
 app.get('/', function(request, response) {
 	response.send(out);
 });
