@@ -2,36 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mardy AFC | Home</title>
-		<link type="text/css" rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-		<link rel='stylesheet' id='camera-css'  href='./Camera/css/camera.css' type='text/css' media='all'>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="./Camera/scripts/jquery.min.js"></script>
-		<script type='text/javascript' src='./Camera/scripts/jquery.mobile.customized.min.js'></script>
-    	<script type='text/javascript' src='./Camera/scripts/jquery.easing.1.3.js'></script>    	
-    	<script type='text/javascript' src='./Camera/scripts/camera.min.js'></script>
-    	<script type="text/javascript" src="./jquery/content.js"></script>
-
-    	<script>
-    		jQuery(function(){
-			
-				jQuery('#camera_wrap_1').camera({
-					thumbnails: false,
-					height: '200px'
-				});
-
-			});
-    	</script>
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 		<style type="text/css">
     		/* LRGE dESKTOP */
     		@media (min-width: 980px) {
       			body {
-        			/*padding-top: 60px;*/
+        			padding-top: 60px;
       			}
       			.linediv-l {
 	        		border-right: 1px white solid;
@@ -72,11 +51,6 @@
         		font-size: 18px;
         		line-height: 24px;
       		}
-      		.spacer {
-      			height: 10px;
-      			margin: 10px 0;
-      			border-bottom: 1px solid #cccccc;
-      		}
       		.sponsor-right{
       			margin: 0 0 6px 0;
       		}
@@ -97,140 +71,70 @@
       	</style>
 	</head>
 	<body>
-		<div class="navbar navbar-fixed-top navbar-inverse">
-			<div class="container">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<a class="navbar-brand" href="#"></a>
-
-				<div class="nav-collapse navbar-responsive-collapse collapse" style="height: auto;">
-					<ul class="nav navbar-nav">
-						<li id="home"class="active"><a href="#home">Home</a></li>
-						<li id="about"><a href="#about">About</a></li>
-						<li id="history"><a href="#history">History</a></li>
-						<li id="teams"><a href="#teams">Teams</a></li>
-						<li id="events"><a href="#events">Events</a></li>
-						<li id="contact"><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="padding-top: 70px;">
-			<div class="row">
-				<div class="col-lg-2 pull-left">
-					<img src="./images/badge_draft3_h200.png">
-				</div>
-				<div class="col-lg-5 col-offset-1">
-					<h1>Mardy AFC</h1>
-					<p class="lead">Welcome to the Mardy AFC website.</p>
-				</div>
-				<div class="col-lg-4 pull-right">
-					<div class="camera_wrap" id="camera_wrap_1" style="width: 370px;">
-						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/mardyjan1983.jpg"></div>
-						<div data-thumb="./images/photos/cupfinal.jpg" data-src="./images/photos/cupfinal.jpg"></div>
-						<div data-thumb="./images/photos/cupfinal19871.jpg" data-src="./images/photos/cupfinal19871.jpg"></div>
-						<div data-thumb="./images/photos/mardyafc80s.jpg" data-src="./images/photos/mardyafc80s.jpg"></div>
-						<div data-thumb="./images/photos/mardynov1984.jpg" data-src="./images/photos/mardynov1984.jpg"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="spacer">
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="content">
-						<div class="page" id="home" style="display: block;">
-							<p>Site is currently undergoing maintenance, please check back soon.</p>
-						</div>
-
-						<div class="page" id="about" style="display: none;">
-							<p>About page will be here....</p>
-						</div>
-
-						<div class="page" id="history" style="display: none;">
-							<p>History page will be here....</p>
-						</div>
-
-						<div class="page" id="teams" style="display: none;">
-							<p>Team page will be here....</p>
-						</div>
-
-						<div class="page" id="events" style="display: none;">
-							<p>Events page will be here....</p>
-						</div>
-
-						<div class="page" id="contact" style="display: none;">
-							<h1>Contact</h1>
-							<div class="row">
-								<div class="col-lg-5">
-									<div class"pitch-loc">
-										<h2>Find the pitch</h2>
-										<address>
-											<strong>Mardy Park</strong><br>
-											St David's Road<br>
-											Mardy<br>
-											Abergavenny<br>
-											NP7 6HF<br>
-										</address>
-										<h2>Secretary</h2>
-										<address>
-											<strong>Ashley Barber</strong><br>
-											24 Old Barn Way<br>
-											Abergavenny<br>
-											NP7 6DY<br>
-											<abbr title="Phone">P:</abbr>07584062875<br>
-											<br>
-											<a href="mailto:info@mardyafc.org.uk">info@mardyafc.org.uk</a>
-										</address>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="map-tog"><a href="#">Show/Hide map</a></div>
-
-									<div class="pitch-map">
-										<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="./pages/map.html"></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4" style="border-left: 1px solid #cccccc;">
-					<div class="pull-right">
-						<a class="twitter-timeline" height="250" width="350" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-						</script>
-					</div>
-					<div>
-						<h2 class="text-right">Sponsors</h2>
-						<p class="text-right">Big thanks to the following for their support</p>
-						<img src="./images/belmont_350x100.png" class="sponsor-right" style="float: right">
-						<a href="http://www.keithpricegarages.com/"><img src="./images/keith-price-logo.jpg" height="44" width="160" class="sponsor-right" style="float: right"></a>
-						<a href="http://swift4.com" target="_blank"><img src="./images/S4-small.jpg" class="sponsor-right image" style="float: right"></a>
-						<img src="http://placehold.it/350x65" class="sponsor-right" style="float: right">		
+		
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a class="brand" href="#">Mardy AFC</a> -->
+					<div class="nav-collapse collapse pull-right">
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span2 pull-left">
+					<img src="images/badge_draft3_h200.png">
+				</div>
+				<div class="span6">
+					<h1>Mardy AFC</h1>
+					<p class="lead">Welcome to the Mardy AFC website.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span2 pull-left">
+					<a class="twitter-timeline" height="500" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div>
+			
+
+				<div class="span10">
+					<div class="row-fluid">
+						<div class="span7">
+							<p>Site currently under maintenenance, please check back soon.....</p>
+						</div>
+						<div class="span5">
+							<h2 class="text-right">Sponsors</h2>
+							<p class="text-right">Big thanks to the following for their support</p>
+							<img src="images/sponsors/belmont_350x100.png" class="sponsor-right" style="float: right">
+							<img src="http://placehold.it/200x100" class="sponsor-right" style="float: right">
+							<img src="http://placehold.it/140x100" class="sponsor-right image" style="float: right">
+							<img src="http://placehold.it/350x65" class="sponsor-right" style="float: right">
+						</div>
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
+				<div class="row-fluid">
+					<div class="span12">
 						<p>Website designed and built by <a href="http://twitter.com/adamwhite1">@adamwhite1</a> &copy; 2013</p>
-						<p>Hosted by <a href="http://swift4.com">Swift4</a></p>
 					</div>
 				</div>
 			</div>
