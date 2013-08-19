@@ -1,11 +1,19 @@
 $(document).ready(function(){
 	$('ul.nav li').click(function(){
 		if(! $(this).hasClass('active')){
-			$('ul.nav ul.dropdown-menu li').removeClass('active');
+			$('ul.nav li').removeClass('active');
 			$(this).addClass('active');
 		}
 
-		var selectionId = $(this).attr('id');
+		var $this = $(this);
+		if($this.children().length > 1){
+			var selectionId = $this.find('li').attr('id');
+			console.log('in the if ' + selectionId);
+		} else {
+			var selectionId = $this.attr('id');
+		}
+		
+		console.log(selectionId);
 
 		$('.content').fadeOut('slow', function(){
 			$('.page').css('display', 'none');

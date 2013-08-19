@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mardy AFC | Home</title>
-		<link rel="icon" src="./favicon.png" type="image/png" />
+		<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+		<!--<link rel="shortcut icon" href="http://www.mardyafc.org.uk/favicon.ico" type="image/x-icon" />-->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./bootstrap-social-buttons/social-buttons.css">
@@ -60,6 +61,8 @@
     		/* Main body and headings */
       		body {
         		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        		margin-left: 25px;
+        		margin-bottom: 20px;
       		}
       		.heading, .subheading {
         		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -140,15 +143,15 @@
 						<li id="about"><a href="#about">About</a></li>
 						<li id="history"><a href="#history">History</a></li>
 						<!--<li id="teams"><a href="#teams">Teams</a></li>-->
-						<li id="teams" class="dropdown">
+						<li class="dropdown" id="teams">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-header">1<sup>st</sup> Team</li>
 								<li id="f-fix"><a href="#f-fix">Fixtures</a></li>
-								<li id="firsts-table"><a href="firsts-table.html">Table</a></li>
+								<li id="firsts-table"><a href="./f-table.html">Table</a></li>
 								<li class="dropdown-header">2<sup>nd</sup> Team</li>
-								<li id="seconds-fixtures"><a href="/pages/seconds-fixtures.html">Fixtures</a></li>
-								<li id="seconds-table"><a href="/pages/seconds-table.html">Table</a></li>
+								<li id="seconds-fixtures"><a href="./s-fix.html">Fixtures</a></li>
+								<li id="seconds-table"><a href="./s-table.html">Table</a></li>
 							</ul>
 						</li>
 						<li id="events"><a href="#events">Events</a></li>
@@ -251,7 +254,7 @@
 				</div>
 				<div class="col-lg-4 pull-right">
 					<div class="camera_wrap" id="camera_wrap_1" style="width: 370px;">
-						<div data-thumb="./images/photos/MardyOpen2013.jpg" data-src="./images/photos/MardyOpen2013.jpg"></div>
+						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/MardyOpen2013.jpg"></div>
 						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/Mardy1stKit.jpg"></div>
 						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/mardyjan1983.jpg"></div>
 						<div data-thumb="./images/photos/cupfinal.jpg" data-src="./images/photos/cupfinal.jpg"></div>
@@ -271,7 +274,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="content">
+					<div class="content" style="margin-left: 20px;">
 						<div class="page" id="home" style="display: block;">
 							<h1>Coming soon....</h1>
 							<h2>Office Lottery</h2>
@@ -294,6 +297,10 @@
 						<div class="page" id="teams" style="display: none;">
 							<h1>Teams</h1>
 							<p>Team pages will be here....</p>
+						</div>
+
+						<div class="page" id="f-fix" style ="display: none;">
+							<iframe height="1500px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="f-fix.html"></iframe>
 						</div>
 
 						<div class="page" id="events" style="display: none;">
