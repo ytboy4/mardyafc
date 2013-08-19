@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('ul.nav li').click(function(){
 		if(! $(this).hasClass('active')){
-			$('ul.nav li').removeClass('active');
+			$('ul.nav ul.dropdown-menu li').removeClass('active');
 			$(this).addClass('active');
 		}
 
