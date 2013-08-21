@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$('ul.nav li').click(function(){
+	$('ul.nav li').click(function(event){
+		event.stopPropagation();
 		if(! $(this).hasClass('active')){
 			$('ul.nav li').removeClass('active');
 			$(this).addClass('active');
