@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mardy AFC | Home</title>
-		<link rel="icon" src="./favicon.png" type="image/png" />
+		<link rel="shortcut icon" href="/favicon.png" type="image/png" />
 		<!--<link rel="shortcut icon" href="http://www.mardyafc.org.uk/favicon.ico" type="image/x-icon" />-->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -61,6 +61,8 @@
     		/* Main body and headings */
       		body {
         		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        		margin-left: 25px;
+        		margin-bottom: 20px;
       		}
       		.heading, .subheading {
         		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -145,11 +147,11 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-header">1<sup>st</sup> Team</li>
-								<li id="firsts-fixtures"><a href="/pages/firsts-fixtures.html">Fixtures</a></li>
-								<li id="firsts-table"><a href="/pages/firsts-table.html">Table</a></li>
+								<li class="sub" id="f-fix"><a href="#f-fix">Fixtures</a></li>
+								<li class="sub" id="firsts-table"><a href="./f-table.html">Table</a></li>
 								<li class="dropdown-header">2<sup>nd</sup> Team</li>
-								<li id="seconds-fixtures"><a href="/pages/seconds-fixtures.html">Fixtures</a></li>
-								<li id="seconds-table"><a href="/pages/seconds-table.html">Table</a></li>
+								<li class="sub" id="seconds-fixtures"><a href="./s-fix.html">Fixtures</a></li>
+								<li class="sub" id="seconds-table"><a href="./s-table.html">Table</a></li>
 							</ul>
 						</li>
 						<li id="events"><a href="#events">Events</a></li>
@@ -196,15 +198,15 @@
 							<h4 class="table-header text-center">Results</h4>
 							<table class="stat-table">
 								<tr>
-									<th colspan="4" class="text-center">Friendly Thurs 15th Aug 2013</th>
+									<th colspan="4" class="text-center">Gwent County Div 2 Tues 20th Aug 2013</th>
 								</tr>
 								<tbody>
 								<tr>
 									<td class="match-details">
 										<small>
-											<span class="team-home">Mardy AFC 1st</span>
-											<span class="score">2-4</span>
-											<span class="team-away"><a href="http://clydachwasps.yolasite.com/">Clydach Wasps</a></span>
+											<span class="team-home"><a href="http://www.clubwebsite.co.uk/rogerstoneafc">Rogerstone AFC</a></span>
+											<span class="score">2-3</span>
+											<span class="team-away">Mardy AFC</span>
 										</small>
 									</td>
 								</tr>
@@ -224,15 +226,15 @@
 							<h4 class="table-header text-center">Fixtures</h4>
 							<table class="stat-table">
 								<tr>
-									<th colspan="4" class="text-center">Gwent County Div 2 Tues 20th Aug 2013</th>
+									<th colspan="4" class="text-center">Gwent County Div 2 Sat 24th Aug 2013</th>
 								</tr>
 								<tbody>
 								<tr>
 									<td class="match-details">
 										<small>
-											<span class="team-home"><a href="http://www.clubwebsite.co.uk/rogerstoneafc">Rogerstone AFC</a></span>
-											<span class="score">18:30</span>
-											<span class="team-away">Mardy AFC</span>
+											<span class="team-home">Mardy AFC</span>
+											<span class="score">15:00</span>
+											<span class="team-away"><a href="http://www.pitchero.com/clubs/rtbebbwvale/">RTB Ebbw Vale</a></span>
 										</small>
 									</td>
 								</tr>
@@ -272,7 +274,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="content">
+					<div class="content" style="margin-left: 20px;">
 						<div class="page" id="home" style="display: block;">
 							<h1>Coming soon....</h1>
 							<h2>Office Lottery</h2>
@@ -295,6 +297,10 @@
 						<div class="page" id="teams" style="display: none;">
 							<h1>Teams</h1>
 							<p>Team pages will be here....</p>
+						</div>
+
+						<div class="page" id="f-fix" style ="display: none;">
+							<iframe height="1500px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="f-fix.html"></iframe>
 						</div>
 
 						<div class="page" id="events" style="display: none;">
