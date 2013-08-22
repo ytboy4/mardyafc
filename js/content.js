@@ -1,20 +1,21 @@
+window.result = [];
+
 $(document).ready(function(){
-	$('ul.nav li').click(function(event){
-		event.stopPropagation();
+	$('ul.nav li').click(function(){
 		if(! $(this).hasClass('active')){
 			$('ul.nav li').removeClass('active');
 			$(this).addClass('active');
 		}
 
 		var $this = $(this);
-		if($this.children().length > 1){
-			var selectionId = $this.find('li').attr('id');
-			console.log('in the if ' + selectionId);
-		} else {
-			var selectionId = $this.attr('id');
+		var selection = $this.attr('id');
+
+		/* Following code adds the li attribute to an array to allow storing the child whcih would
+		   get overwritten by the parent when DOM bubbling occurs. */
+		if(selection != undefined){
+			result.push(selection);
+			selectionId = result.pop();
 		}
-		
-		console.log(selectionId);
 
 		$('.content').fadeOut('slow', function(){
 			$('.page').css('display', 'none');
