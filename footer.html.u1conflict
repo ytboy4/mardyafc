@@ -1,0 +1,10 @@
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Website designed and built by <a href="http://twitter.com/adamwhite1">@adamwhite1</a> &copy; 2013</p>
+				<p>Hosted by <a href="http://swift4.com">Swift4&trade;</a></p>
+			</div>
+		</div>
+	</div>
+</footer>

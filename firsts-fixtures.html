@@ -1,0 +1,593 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardy AFC | Home</title>
+    <link rel="icon" src="./favicon.png" type="image/png" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-social-buttons/social-buttons.css">
+    <link rel='stylesheet' id='camera-css'  href='./Camera/css/camera.css' type='text/css' media='all'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./Camera/scripts/jquery.min.js"></script>
+    <script type='text/javascript' src='./Camera/scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='./Camera/scripts/jquery.easing.1.3.js'></script>      
+    <script type='text/javascript' src='./Camera/scripts/camera.min.js'></script>
+    <script type="text/javascript" src="./js/content.js"></script>
+  </head>
+
+      <style type="text/css">
+        /* LRGE dESKTOP */
+        @media (min-width: 980px) {
+            body {
+              /*padding-top: 60px;*/
+            }
+            .linediv-l {
+              border-right: 1px white solid;
+            }
+            .linediv-r {
+              border-left: 1px white solid;
+            }
+        }
+      
+        /* Landscape phones and down */
+        @media (max-width: 480px) {
+            .copy {
+              padding: 2.5% 10%;
+            }
+            .linediv-l {
+              border-bottom: 1px white solid;
+            }
+            .linediv-r {
+              border-top: 1px white solid;
+            }
+        }
+
+        /* All form factors */
+        /* Main body and headings */
+          body {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+          }
+          .heading, .subheading {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+            text-align: center;
+          }
+          p.lead {
+            padding-top: 1.5%;
+            font-size: 24px;
+            line-height: 30px;
+          }   
+          p {
+            font-size: 18px;
+            line-height: 24px;
+          }
+          tbody {
+            width: 300px;
+          }
+          .spacer {
+            height: 10px;
+            margin: 10px 0;
+            border-bottom: 1px solid #cccccc;
+          }
+          .sponsor-right {
+            margin: 0 0 6px 0;
+          }
+          .sponsor-right, .image {
+            margin-right: 10px;
+          }
+          .stat-table {
+            width: 300px;
+            line-height: 16px;
+          }
+          .team-home, .team-away, .score{
+            display: block;
+            float: left;
+            padding: 0 8px;
+          }
+          .team-home, .team-away{
+            width: 42.5%;
+          }
+          .team-home {
+            text-align: right;
+          }
+          .team-away {
+            text-align: left;
+          }
+          .score {
+            text-align: center;
+            width: 15%;
+          }
+          .footer {
+            background-color:#777777;
+            color: #cccccc;
+            text-align: center;
+          }
+          .footer p {
+            font-size: 11px;
+          }
+          .footer a {
+            color: #ccccff;
+          }
+        </style>
+
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"></a>
+
+        <div class="nav-collapse navbar-responsive-collapse collapse" style="height: auto;">
+          <ul class="nav navbar-nav">
+            <li id="home"class="active"><a href="#home">Home</a></li>
+            <li id="about"><a href="#about">About</a></li>
+            <li id="history"><a href="#history">History</a></li>
+            <!--<li id="teams"><a href="#teams">Teams</a></li>-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">1<sup>st</sup> Team</li>
+                <li id="firsts-fixtures"><a href="/pages/firsts-fixtures.html">Fixtures</a></li>
+                <li id="firsts-table"><a href="/pages/firsts-table.html">Table</a></li>
+                <li class="dropdown-header">2<sup>nd</sup> Team</li>
+                <li id="seconds-fixtures"><a href="/pages/seconds-fixtures.html">Fixtures</a></li>
+                <li id="seconds-table"><a href="/pages/seconds-table.html">Table</a></li>
+              </ul>
+            </li>
+            <li id="events"><a href="#events">Events</a></li>
+            <li id="contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 70px;">
+      <div class="row">
+        <div class="col-lg-2 pull-left">
+          <img src="./images/badge_draft3_h200.png">
+          <div class="row">
+            <div class="col-lg-10 text-center">
+              <!-- AddThis Smart Layers BEGIN -->
+              <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5204af7854254081"></script>
+              <script type="text/javascript">
+                addthis.layers({
+                  'theme' : 'transparent',
+                  'share' : {
+                    'position' : 'left',
+                    'numPreferredServices' : 3
+                  }, 
+                  'follow' : {
+                    'services' : [
+                      {'service': 'facebook', 'id': 'mardyafc'},
+                      {'service': 'twitter', 'id': 'mardyafc'}
+                    ]
+                  },  
+                  'whatsnext' : {}  
+                });
+              </script>
+              <!-- AddThis Smart Layers END -->
+            </div>
+          </div>
+        </div>
+
+<div>
+
+<p></p>
+
+<h1>1<sup>st</sup> Team Fixtures 2013/14</h1>
+
+<p></p>
+
+<table class="table table-striped">
+ <tr>
+  <td>
+  <p><b>Month</b></p>
+  </td>
+  <td>
+  <p><b>Date</b></p>
+  </td>
+  <td>
+  <p><b>Team</b></p>
+  </td>
+  <td>
+  <p><b>Fixture</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>August</b></p>
+  </td>
+  <td>
+  <p>Tues 20th</p>
+  </td>
+  <td>
+  <p>Rogerstone AFC</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 24th</p>
+  </td>
+  <td>
+  <p>RTB Ebbw Vale</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Tues 27th</p>
+  </td>
+  <td>
+  <p>Cefn Fforest</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 31st</p>
+  </td>
+  <td>
+  <p>Spencer Youth</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>September</b></p>
+  </td>
+  <td>
+  <p>Sat 14th</p>
+  </td>
+  <td>
+  <p>Cwmffrwdoer</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 21st</p>
+  </td>
+  <td>
+  <p>Blackrock Rovers</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 28th</p>
+  </td>
+  <td>
+  <p>Ynysddu Welfare</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>October</b></p>
+  </td>
+  <td>
+  <p>Sat 5th</p>
+  </td>
+  <td>
+  <p>Lucas Cwmbran</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 19th</p>
+  </td>
+  <td>
+  <p>Llanhilleth Athletic</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 26th</p>
+  </td>
+  <td>
+  <p>New Inn AFC</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>November</b></p>
+  </td>
+  <td>
+  <p>Sat 9th</p>
+  </td>
+  <td>
+  <p>Cromwell AFC</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 16th</p>
+  </td>
+  <td>
+  <p>Marshfield AFC</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 23rd</p>
+  </td>
+  <td>
+  <p>Malpas United</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 30th</p>
+  </td>
+  <td>
+  <p>Rockfield Rovers</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>December</b></p>
+  </td>
+  <td>
+  <p>Sat 14th</p>
+  </td>
+  <td>
+  <p>Tredegar Athletic</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 21st</p>
+  </td>
+  <td>
+  <p>Rogerstone AFC</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 28th</p>
+  </td>
+  <td>
+  <p>Cefn Fforest</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>January</b></p>
+  </td>
+  <td>
+  <p>Sat 4th</p>
+  </td>
+  <td>
+  <p>Cwmffrwdoer</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 18th</p>
+  </td>
+  <td>
+  <p>Llanhilleth Athletic</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 25th</p>
+  </td>
+  <td>
+  <p>Rockfield Rovers</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>February</b></p>
+  </td>
+  <td>
+  <p>Sat 1st</p>
+  </td>
+  <td>
+  <p>Ynysddu Welfare</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 8th</p>
+  </td>
+  <td>
+  <p>Marshfield
+  AFC</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 15th</p>
+  </td>
+  <td>
+  <p>Blackrock
+  Rovers</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 22nd</p>
+  </td>
+  <td>
+  <p>Malpas United</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p><b>March</b></p>
+  </td>
+  <td>
+  <p>Sat 1st</p>
+  </td>
+  <td>
+  <p>Lucas Cwmbran</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 8th</p>
+  </td>
+  <td>
+  <p>RTB Ebbw Vale</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 15th</p>
+  </td>
+  <td>
+  <p>New Inn AFC</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 22nd</p>
+  </td>
+  <td>
+  <p>Tredegar Athletic</p>
+  </td>
+  <td>
+  <p>Away</p>
+  </td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+  <p>Sat 29th</p>
+  </td>
+  <td>
+  <p>Spencer Youth</p>
+  </td>
+  <td>
+  <p>Home</p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+
+</div>
+<div class="col-lg-4" style="border-left: 1px solid #cccccc;">
+          <div class="pull-right">
+            <a class="twitter-timeline" height="250" width="350" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+          </div>
+          <div>
+            <h2 class="text-right">Sponsors</h2>
+            <p class="text-right">Big thanks to the following for their support</p>
+            <img src="./images/belmont_350x100.png" class="sponsor-right" style="float: right">
+            <a href="http://www.keithpricegarages.com/"><img src="./images/keith-price-logo.jpg" height="44" width="160" class="sponsor-right" style="float: right"></a>
+            <a href="http://swift4.com" target="_blank"><img src="./images/swift4
+              .png" height="44" width="180" class="sponsor-right image" style="float: right"></a>
+            <img src="http://placehold.it/350x65" class="sponsor-right" style="float: right">   
+          </div>
+        </div>
+<!--#include virtual="footer.html"-->
+</body>
+
+</html>
