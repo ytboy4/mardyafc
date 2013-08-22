@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mardy AFC | Home</title>
+		<link rel="icon" src="./favicon.png" type="image/png" />
+		<!--<link rel="shortcut icon" href="http://www.mardyafc.org.uk/favicon.ico" type="image/x-icon" />-->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap-social-buttons/social-buttons.css">
+		<link rel='stylesheet' id='camera-css'  href='./Camera/css/camera.css' type='text/css' media='all'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./Camera/scripts/jquery.min.js"></script>
+		<script type='text/javascript' src='./Camera/scripts/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='./Camera/scripts/jquery.easing.1.3.js'></script>    	
+    	<script type='text/javascript' src='./Camera/scripts/camera.min.js'></script>
+    	<script type="text/javascript" src="./js/content.js"></script>
+
+    	<script>
+    		jQuery(function(){
+
+				jQuery('#camera_wrap_1').camera({
+					thumbnails: false,
+					height: '200px'
+				});
+
+			});
+    	</script>
+
+		<style type="text/css">
+    		/* LRGE dESKTOP */
+    		@media (min-width: 980px) {
+      			body {
+        			/*padding-top: 60px;*/
+      			}
+      			.linediv-l {
+	        		border-right: 1px white solid;
+      			}
+      			.linediv-r {
+	        		border-left: 1px white solid;
+      			}
+    		}
+      
+     		/* Landscape phones and down */
+		    @media (max-width: 480px) {
+      			.copy {
+	        		padding: 2.5% 10%;
+      			}
+      			.linediv-l {
+			        border-bottom: 1px white solid;
+      			}
+      			.linediv-r {
+	        		border-top: 1px white solid;
+      			}
+    		}
+
+    		/* All form factors */
+    		/* Main body and headings */
+      		body {
+        		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      		}
+      		.heading, .subheading {
+        		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        		text-align: center;
+      		}
+      		p.lead {
+        		padding-top: 1.5%;
+        		font-size: 24px;
+		        line-height: 30px;
+      		}		
+      		p {
+        		font-size: 18px;
+        		line-height: 24px;
+      		}
+      		tbody {
+      			width: 300px;
+      		}
+      		.spacer {
+      			height: 10px;
+      			margin: 10px 0;
+      			border-bottom: 1px solid #cccccc;
+      		}
+      		.sponsor-right {
+      			margin: 0 0 6px 0;
+      		}
+      		.sponsor-right, .image {
+      			margin-right: 10px;
+      		}
+      		.stat-table {
+      			width: 300px;
+      			line-height: 16px;
+      		}
+      		.team-home, .team-away, .score{
+      			display: block;
+      			float: left;
+      			padding: 0 8px;
+      		}
+      		.team-home, .team-away{
+      			width: 42.5%;
+      		}
+      		.team-home {
+      			text-align: right;
+      		}
+      		.team-away {
+      			text-align: left;
+      		}
+      		.score {
+      			text-align: center;
+      			width: 15%;
+      		}
+      		.footer {
+      			background-color:#777777;
+        		color: #cccccc;
+        		text-align: center;
+      		}
+      		.footer p {
+        		font-size: 11px;
+      		}
+      		.footer a {
+        		color: #ccccff;
+      		}
+      	</style>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"></a>
+
+				<div class="nav-collapse navbar-responsive-collapse collapse" style="height: auto;">
+					<ul class="nav navbar-nav">
+						<li id="home"class="active"><a href="#home">Home</a></li>
+						<li id="about"><a href="#about">About</a></li>
+						<li id="history"><a href="#history">History</a></li>
+						<!--<li id="teams"><a href="#teams">Teams</a></li>-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">1<sup>st</sup> Team</li>
+								<li id="firsts-fixtures"><a href="/pages/firsts-fixtures.html">Fixtures</a></li>
+								<li id="firsts-table"><a href="/pages/firsts-table.html">Table</a></li>
+								<li class="dropdown-header">2<sup>nd</sup> Team</li>
+								<li id="seconds-fixtures"><a href="/pages/seconds-fixtures.html">Fixtures</a></li>
+								<li id="seconds-table"><a href="/pages/seconds-table.html">Table</a></li>
+							</ul>
+						</li>
+						<li id="events"><a href="#events">Events</a></li>
+						<li id="contact"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="padding-top: 70px;">
+			<div class="row">
+				<div class="col-lg-2 pull-left">
+					<img src="./images/badge_draft3_h200.png">
+					<div class="row">
+						<div class="col-lg-10 text-center">
+							<!-- AddThis Smart Layers BEGIN -->
+							<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5204af7854254081"></script>
+							<script type="text/javascript">
+							  addthis.layers({
+							    'theme' : 'transparent',
+							    'share' : {
+							      'position' : 'left',
+							      'numPreferredServices' : 3
+							    }, 
+							    'follow' : {
+							      'services' : [
+							        {'service': 'facebook', 'id': 'mardyafc'},
+							        {'service': 'twitter', 'id': 'mardyafc'}
+							      ]
+							    },  
+							    'whatsnext' : {}  
+							  });
+							</script>
+							<!-- AddThis Smart Layers END -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h1>Mardy AFC</h1>
+					<p class="lead">Welcome to the Mardy AFC website.</p>
+					<div class="row">
+						<div class="col-lg-6 pull left">
+							<h4 class="table-header text-center">Results</h4>
+							<table class="stat-table">
+								<tr>
+									<th colspan="4" class="text-center">Friendly Thurs 15th Aug 2013</th>
+								</tr>
+								<tbody>
+								<tr>
+									<td class="match-details">
+										<small>
+											<span class="team-home">Mardy AFC 1st</span>
+											<span class="score">2-4</span>
+											<span class="team-away"><a href="http://clydachwasps.yolasite.com/">Clydach Wasps</a></span>
+										</small>
+									</td>
+								</tr>
+								<!--<tr>
+									<td>
+										<small>
+											<span class="team-home">Rockfield</span>
+											<span class="score">0-4</span>
+											<spanclass="team-away">Mardy AFC 2nd</span>
+										</small>
+									</td>
+								</tr>-->
+								</tbody>
+							</table>
+						</div>
+						<div class="col-lg-6 pull right">
+							<h4 class="table-header text-center">Fixtures</h4>
+							<table class="stat-table">
+								<tr>
+									<th colspan="4" class="text-center">Gwent County Div 2 Tues 20th Aug 2013</th>
+								</tr>
+								<tbody>
+								<tr>
+									<td class="match-details">
+										<small>
+											<span class="team-home"><a href="http://www.clubwebsite.co.uk/rogerstoneafc">Rogerstone AFC</a></span>
+											<span class="score">18:30</span>
+											<span class="team-away">Mardy AFC</span>
+										</small>
+									</td>
+								</tr>
+								<!--<tr>
+									<td>
+										<small>
+											<span class="team-home">TBC</span>
+											<span class="score">v</span>
+											<spanclass="team-away">Mardy AFC 2nd</span>
+										</small>
+									</td>
+								</tr>-->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pull-right">
+					<div class="camera_wrap" id="camera_wrap_1" style="width: 370px;">
+						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/MardyOpen2013.jpg"></div>
+						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/Mardy1stKit.jpg"></div>
+						<div data-thumb="./images/photos/mardyjan1983.jpg" data-src="./images/photos/mardyjan1983.jpg"></div>
+						<div data-thumb="./images/photos/cupfinal.jpg" data-src="./images/photos/cupfinal.jpg"></div>
+						<div data-thumb="./images/photos/cupfinal19871.jpg" data-src="./images/photos/cupfinal19871.jpg"></div>
+						<div data-thumb="./images/photos/mardyafc80s.jpg" data-src="./images/photos/mardyafc80s.jpg"></div>
+						<div data-thumb="./images/photos/mardynov1984.jpg" data-src="./images/photos/mardynov1984.jpg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="spacer">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="content">
+						<div class="page" id="home" style="display: block;">
+							<h1>Coming soon....</h1>
+							<h2>Office Lottery</h2>
+							<p>Generate that excitment the Friday feeling brings into your office with the Mardy AFC Office Lottery. Play with up to 20 colleagues each week, draw will take place every Friday at 3pm. More details to follow.....</p>
+							<h1>Volunteers needed</h1>
+							<h2>Car parking assistants</h2>
+							<p>In association with <a href="http://www.pitchero.com/clubs/abergavennyrfc/">Abergavenny RFC</a> are hosting a Country and Western weekend, players from both clubs will be carrying out car parking duties to raise additional funds for the upcoming season. More details to follow.....</p>	
+						</div>
+
+						<div class="page" id="about" style="display: none;">
+							<h1>About</h1>
+							<p>About page will be here....</p>
+						</div>
+
+						<div class="page" id="history" style="display: none;">
+							<h1>History</h1>
+							<p>History page will be here....</p>
+						</div>
+
+						<div class="page" id="teams" style="display: none;">
+							<h1>Teams</h1>
+							<p>Team pages will be here....</p>
+						</div>
+
+						<div class="page" id="events" style="display: none;">
+							<h1>Events</h1>
+							<p>Events page will be here....</p>
+						</div>
+
+						<div class="page" id="contact" style="display: none;">
+							<h1>Contact</h1>
+							<div class="row">
+								<div class="col-lg-5">
+									<div class"pitch-loc">
+										<h2>Find the pitch</h2>
+										<address>
+											<strong>Mardy Park</strong><br>
+											St David's Road<br>
+											Mardy<br>
+											Abergavenny<br>
+											NP7 6HF<br>
+										</address>
+										<h2>Secretary</h2>
+										<address>
+											<strong>Ashley Barber</strong><br>
+											24 Old Barn Way<br>
+											Abergavenny<br>
+											NP7 6DY<br>
+											<abbr title="Phone">P:</abbr>07584062875<br>
+											<br>
+											<a href="mailto:info@mardyafc.org.uk">info@mardyafc.org.uk</a>
+										</address>
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="map-tog"><a href="#">Show/Hide map</a></div>
+
+									<div class="pitch-map">
+										<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="./pages/map.html"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4" style="border-left: 1px solid #cccccc;">
+					<div class="pull-right">
+						<a class="twitter-timeline" height="250" width="350" href="https://twitter.com/mardyafc" data-widget-id="359284601383948289">Tweets by @mardyafc</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+						</script>
+					</div>
+					<div>
+						<h2 class="text-right">Sponsors</h2>
+						<p class="text-right">Big thanks to the following for their support</p>
+						<img src="./images/belmont_350x100.png" class="sponsor-right" style="float: right">
+						<a href="http://www.keithpricegarages.com/"><img src="./images/keith-price-logo.jpg" height="44" width="160" class="sponsor-right" style="float: right"></a>
+						<a href="http://swift4.com" target="_blank"><img src="./images/swift4
+							.png" height="44" width="180" class="sponsor-right image" style="float: right"></a>
+						<img src="http://placehold.it/350x65" class="sponsor-right" style="float: right">		
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--#include virtual="footer.html"-->
+
+	</body>
+</html>
