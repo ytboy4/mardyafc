@@ -15,7 +15,10 @@ $(document).ready(function(){
 		if(selection != undefined){
 			result.push(selection);
 			selectionId = result.pop();
-		}
+		} 
+	
+		console.log(selection);
+		console.log(selectionId);
 
 		$('.content').fadeOut('slow', function(){
 			$('.page').css('display', 'none');
